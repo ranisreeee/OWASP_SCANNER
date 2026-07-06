@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Run Scanner",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/owasp_scanner/scanner.py",
+            "args": [
+                "-u",
+                "http://127.0.0.1:5000",
+                "-f",
+                "html",
+                "-o",
+                "report.html",
+                "-v"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Run Test App",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/test_vulnerable_app/app.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
